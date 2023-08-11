@@ -1,11 +1,33 @@
-<div class="ui segment basic slim">
-    <div class="ui header blue medium">
-      Audio Motion Analyzer
-    </div>
+<div class="">
+
+  <div class="ui header blue medium top attached">
+    Audio Motion Analyzer
+  </div>
+  <div class="ui segment attached basic">
     <div class="ui button blue basic small compact" pageaction="micOn">
-      Use Microphone
+      Start Visuals
     </div>
     <div class="ui button blue basic small compact" pageaction="micOff">
-      Stop Microphone
+      Stop
     </div>
+  </div>
+  <div class="ui segment attached basic pad0 mar0">
+    <div class="mar0 pad0 ui top attached tabular menu">
+      <a appuse="tablinks" group="inputtabs" item="maintab1" pageaction="showSubPage" class="item blue active ">Sources</a>
+      <a appuse="tablinks" group="inputtabs" item="maintab2" pageaction="showSubPage" class="item blue">Visuals</a>
+    </div>
+    <div class=" ui  bottom attached slim blue segment   ">
+      <div appuse="cards" group="inputtabs" item="maintab1" class="pad0 ">
+        <div pagespot="audio-sources">Pending ...</div>
+      </div>
+      <div appuse="cards" group="inputtabs" item="maintab2" class="pad0  hidden ">
+      <div class="ui message">
+        Visual Controls can go here  
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
 </div>
